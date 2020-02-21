@@ -202,7 +202,8 @@ func (b *processing) createProject(cmd string) {
 }
 
 func selectConfigProvider() string {
-	fmt.Println("\nSelect configuration provider\n=====================================\n")
+	fmt.Println("\nSelect configuration provider\n=====================================")
+	fmt.Println("")
 	for i:=uint8(1); i<=uint8(len(configProviders)); i++ {
 		fmt.Printf("\t%d: %s\n", i, configProviders[i])
 	}

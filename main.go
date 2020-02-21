@@ -25,7 +25,8 @@ var procs = map[string] processors.CmdProcessor {
 
 func welcomeMessage() {
 	fmt.Println("LibMicroCMD LibMicro Command Line Interface")
-	fmt.Println("Usage: lmcli <command> <subcommand> <parameter>\n")
+	fmt.Println("Usage: lmcli <command> <subcommand> <parameter>")
+	fmt.Println("")
 	fmt.Println("  Commands:")
 	//fmt.Println("\tbuild\t|\tb\t- builds project")
 	fmt.Println("\tcp\t- creates a project")

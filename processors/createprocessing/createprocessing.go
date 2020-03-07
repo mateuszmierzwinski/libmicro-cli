@@ -92,7 +92,7 @@ func gitIgnoreFileAdd(wd string) {
 	buff.WriteString("# Vendoring\nvendor\n\n")
 	buff.WriteString("# OSX Junk files\n.DS_Store\n\n")
 
-	ioutil.WriteFile(filepath.Join(wd, ".gitingore"), buff.Bytes(), os.ModePerm)
+	ioutil.WriteFile(filepath.Join(wd, ".gitignore"), buff.Bytes(), os.ModePerm)
 }
 
 func sonarProjectFileAdd(wd, projectName string) {
